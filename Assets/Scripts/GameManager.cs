@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
             spawnPosition.x = Random.Range(-5f, 5f);
             Instantiate(platformSpawner, spawnPosition, Quaternion.identity);
         }
+
+        FindObjectOfType<HighScoreSave>().LoadBinary();
     }
 
 }
