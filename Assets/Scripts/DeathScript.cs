@@ -14,7 +14,7 @@ public class DeathScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(other.gameObject);
+      //  Destroy(other.gameObject);
         saveScore = _text.scoreInt;
        // text.text = saveScore.ToString();
 
