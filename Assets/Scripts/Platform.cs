@@ -5,6 +5,8 @@ using UnityEngine.Animations;
 
 public class Platform : MonoBehaviour
 {
+
+    [SerializeField] private Animator animator;
     public float jumpForce = 10f;
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -17,14 +19,14 @@ public class Platform : MonoBehaviour
                 Vector2 velocity = rb.velocity;
                 velocity.y = jumpForce;
                 rb.velocity = velocity;
+
+                animator.SetTrigger("Jump");
             }
 
+
         }
 
-       /* void update()
-        {
-            Animator.
-        }
-        */
+
+        
     }
 }
