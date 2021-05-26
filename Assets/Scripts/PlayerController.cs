@@ -26,4 +26,6 @@ public class PlayerController : MonoBehaviour
         velocity.x = moveX;
         rb.velocity = velocity;
     }
+
+
 }

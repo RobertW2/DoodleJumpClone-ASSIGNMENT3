@@ -9,4 +9,18 @@ public class Retry : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+
+    public void StartButton()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    public void QuitButton()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
 }

@@ -52,7 +52,7 @@ public class HighScoreSave : MonoBehaviour
             // Display it here using data
             // Leaderboard.
             //   highScore.text = data.scoreInt.ToString();
-            Debug.Log(data);
+            Debug.Log(data.scoreInt);
         }
     }
 

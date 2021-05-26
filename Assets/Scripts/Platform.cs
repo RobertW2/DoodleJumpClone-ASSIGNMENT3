@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class Platform : MonoBehaviour
 {
@@ -19,5 +20,11 @@ public class Platform : MonoBehaviour
             }
 
         }
+
+       /* void update()
+        {
+            Animator.
+        }
+        */
     }
 }
