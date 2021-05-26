@@ -23,4 +23,9 @@ public class Retry : MonoBehaviour
         Application.Quit();
 #endif
     }
+
+    public void Start()
+    {
+        FindObjectOfType<HighScoreSave>().LoadBinary();
+    }
 }

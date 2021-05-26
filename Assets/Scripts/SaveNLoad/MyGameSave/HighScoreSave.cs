@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
@@ -9,6 +10,7 @@ public class HighScoreSave : MonoBehaviour
     private string FilePath => Application.streamingAssetsPath + "/highScore";
 
     public ScoreText text;
+    public Text highScoreText;
 
 
 
@@ -51,7 +53,7 @@ public class HighScoreSave : MonoBehaviour
             ScoreData data = formatter.Deserialize(stream) as ScoreData;
             // Display it here using data
             // Leaderboard.
-            //   highScore.text = data.scoreInt.ToString();
+               highScoreText.text = data.scoreInt.ToString();
             Debug.Log(data.scoreInt);
         }
     }

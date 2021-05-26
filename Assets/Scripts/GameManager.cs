@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
             Instantiate(platformSpawner, spawnPosition, Quaternion.identity);
         }
 
-        FindObjectOfType<HighScoreSave>().LoadBinary();
+     //   FindObjectOfType<HighScoreSave>().LoadBinary();
     }
 
 }
