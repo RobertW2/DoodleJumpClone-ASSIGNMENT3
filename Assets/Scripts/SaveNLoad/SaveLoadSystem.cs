@@ -98,9 +98,9 @@ namespace Serialization
 
         }
 
-        private void OnGUI()
-        {
-            if (GUILayout.Button("Save"))
+      //  private void OnGUI()
+      //  {
+        /*    if (GUILayout.Button("Save"))
             {
                 // Saves the game.
                 Save();
@@ -113,5 +113,7 @@ namespace Serialization
                 Load();
             }
         }
+        */
+
     }
 }

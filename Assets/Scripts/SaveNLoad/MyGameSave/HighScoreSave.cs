@@ -58,6 +58,7 @@ public class HighScoreSave : MonoBehaviour
         }
     }
 
+    /*
     private void OnGUI()
     {
         if (GUILayout.Button("Save"))
@@ -73,6 +74,7 @@ public class HighScoreSave : MonoBehaviour
             LoadBinary();
         }
     }
+    */
 
 
 }
